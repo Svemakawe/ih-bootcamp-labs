@@ -1,0 +1,121 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  /* height: 150px; */
+  border: 2px solid red;
+}
+
+.nav-container > div {
+  /* display: flex;
+  justify-content: space-between; */
+  /* float: left;
+  width: 70%; */
+}
+
+.nav-container > img {
+/* margin-top: 20px;
+margin-left: 2%; */
+}
+
+.nav-links {
+  /* margin-top: 50px; */
+}
+
+.nav-links > a {
+  /* text-decoration: none;
+  color: black;
+  margin: 0 20px;
+  font-size: 1.5em; */
+}
+
+.sec1-container {
+  background-image: url("images/landing.jpg");
+  /* background-size: cover;
+  color: white;
+  text-align: center;
+  height: 700px;
+  padding-top: 15%; */
+  border: 2px solid green;
+}
+
+.sec1-container > h1 {
+  /* font-size: 6rem;
+  margin-bottom: 1%; */
+}
+
+.sec1-container > p {
+  /* font-size: 2rem;
+  margin: 0 */
+}
+
+.sec2-container {
+  /* margin: 2%; */
+  border: 2px solid purple;
+}
+
+.sec2-container > h2 {
+  /* font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 5%;
+  text-decoration: underline green;
+  text-underline-position: under; */
+}
+
+.sec2-data {
+  /* display: flex;
+  justify-content: space-evenly;
+  text-align: center; */
+}
+
+.sec2-data > div {
+  /* width: 15%; */
+}
+
+.sec2-data > div > h3 {
+  /* color: green;
+  font-size: 1.5rem; */
+}
+
+.sec2-data > div > p {
+  /* font-size: 1.2rem; */
+}
+
+.sec2-bottom {
+  /* background-color: green;
+  color: white;
+  display: flex;
+  justify-content: space-evenly; */
+  /* margin: 50px; */
+  /* height: 600px; */
+  border: 2px solid blue;
+}
+
+.sec2-bottom > div > img {
+  border: 2px solid yellow;
+}
+
+.sec2-box {
+  /* width: 35%; */
+  border: 2px solid pink;
+}
+
+.sec2-box > h2 {
+  /* font-size: 2rem;
+  text-decoration: underline white;
+  text-underline-position: under; */
+}
+
+.sec2-mini-box {
+  /* width: 80%; */
+}
+
+.sec2-mini-box > h3 {
+  /* font-size: 1.5rem; */
+}
+
+.sec2-mini-box > p {
+  /* font-size: 1rem; */
+}

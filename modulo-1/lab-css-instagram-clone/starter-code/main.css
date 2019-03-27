@@ -1,85 +1,106 @@
-/*
-Colors to use:
-dark blue: #06365f
-light blue: #1c5380
-*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
-body {
-  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+* {
   margin: 0;
+  padding: 0;
+  font-family: Roboto;
 }
 
-h2 {
-  color: #063651;
+.container {
+  background-image: url("./images/bgtile.png");
+  background-size: 1px 280px;
+  background-repeat: repeat-x;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+  margin-bottom: 30px;
+  /* border: 5px solid red; */
+}
+
+.container > img {
+  /* border: 3px solid pink; */
+}
+
+.container > div {
+  width: 40%;
+  margin-left: 50px;
+  /* border: 3px solid green; */
+}
+
+.sec-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 5px;
+  /* border: 2px solid black; */
+}
+
+.sec-box > button {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+  border-color: #5588B2;
+  width: 90px;
+  size: fixed;
+  height: 40px;
+  background-color: #5588B2;
+  margin-top: 15px;
+  box-shadow: -1px -1px #2d5372;
+}
+
+.sec-box > button > p {
+  margin-top: 3px;
+  color: #DDE8F0;
+  font-size: 1.2em;
+}
+
+.box-content {
+  background-image: url("./images/frame.png");
+  background-size: cover;
+  padding: 30px;
+  /* border: 2px solid orange; */
+}
+
+.box-text > h1 {
+  color: darkblue;
+  font-family: sans-serif;
+  margin-bottom: 15px;
   width: 60%;
 }
 
-a {
-  text-align: center;
-  width: 400px;
-  margin: 0 20 0 20;
+.box-text > p {
+  margin-bottom: 10px;
+}
+
+.box-text > p > span {
+  font-weight: bold;
+}
+
+.box-buttons {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.box-buttons > img {
+  margin-right: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  /* border: 5px solid blue; */
+}
+
+footer > div > a {
   text-decoration: none;
-  padding: 0 20px 0 20px;
+  color: #3A6890;
+  margin-right: 10px;
+  font-size: 0.8em;
 }
 
-.div-heading {
-  width: 37%;
-  position: relative;
-  left: 610px;
-  bottom: 190px;
-}
-
-.button {
-  position: relative;
-  bottom: 30px;
-  left: 100px;
-  border: 1px solid #1c5380;
-  box-shadow: 1px 1px 1px 1px #06365f;
-  font-size: 16px;
-  background: #1c5380;
-  padding: 5px;
-  color: white;
-}
-
-.background {
-  background-color: #1c5380;
-  height: 300px;
-}
-
-.section-phone {
-  width:25%;
-  position: relative;
-  top: 90px;
-  left: 270px;
-}
-
-.img-frame {
-  position: relative;
-  width: 38%;
-  left: 605px;
-  bottom: 190px;
-  height: 350px;
-}
-
-.text-frame {
-  position: relative;
-  bottom: 540px;
-  left: 645px;
-  width: 32%;
-  height: 320px;
-}
-
-.buttons2 {
-  position: relative;
-  bottom: 520px;
-  left: 635px;
-  
-}
-
-.links-bottom {
-  position: relative;
-  bottom: 470px;
-  left: 285px;
-  color: #1c5380;
-  margin: 0 20 0 20;
+footer p {
+  font-size: 0.8em;
+  color: lightgray;
 }
