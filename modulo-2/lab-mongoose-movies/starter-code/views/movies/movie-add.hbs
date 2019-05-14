@@ -1,0 +1,16 @@
+<h2>Create a New Movie</h2>
+<form action="/movies/add" method="POST">
+  <label for="title">title</label>
+  <input type="text" id="title" name="title">
+  <label for="genre">Genre</label>
+  <input type="text" id="genre" name="genre">
+  <label for="plot">Plot</label>
+  <input type="text" id="plot" name="plot">
+  {{#each celebs}}
+    <div>
+      <label for="{{this._id}}">{{this.name}}</label>
+      <input type="checkbox" id="{{this._id}}" name="stars" value="{{this._id}}">
+    </div>
+  {{/each}}
+  <button type="submit">Create</button>
+</form>

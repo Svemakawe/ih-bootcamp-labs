@@ -1,0 +1,11 @@
+.beer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.beer-container > div {
+  margin-right: 5%;
+  margin-bottom: 5%;
+}

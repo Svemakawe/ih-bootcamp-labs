@@ -1,17 +1,18 @@
-const mongoose = require("mongoose");
-const Schema   = mongoose.Schema;
+const mongoose = require('mongoose');
 
-const celebritySchema = new Schema({
+const { Schema } = mongoose;
+
+const celebSchema = new Schema({
   name: String,
   occupation: String,
-  catchPhrase: String
-}, {
+  catchPhrase: String,
+},
+{
   timestamps: {
-    createdAt: "created_at",
-    updatedAt: "updated_at"
-  }
+    createdAt: 'created_at',
+    updatedAt: 'updated_at',
+  },
 });
 
-const Celebrity = mongoose.model("Celebrity", celebritySchema);
-
+const Celebrity = mongoose.model('Celeb', celebSchema);
 module.exports = Celebrity;

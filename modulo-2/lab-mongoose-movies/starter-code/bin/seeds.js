@@ -1,29 +1,50 @@
 const mongoose = require('mongoose');
-const Celebrity = require('../models/Celebrity');
-const dbName = 'dbCelebrities';
+// const Celebrity = require('../models/Celebrity.js');
+const Movie = require('../models/Movie.js');
 
+const dbName = 'celebrity-lab';
 mongoose.connect(`mongodb://localhost/${dbName}`);
 
-const celebrities = [
+// const celebrities = [
+//   {
+//     name: 'Lady Gaga',
+//     occupation: 'Singer',
+//     catchPhrase: 'Gaga Uh Lala',
+//   },
+//   {
+//     name: 'Keanu Reaves',
+//     occupation: 'Actor',
+//     catchPhrase: 'The Matrix is Real',
+//   },
+//   {
+//     name: 'Robert Downey Jr',
+//     occupation: 'Actor',
+//     catchPhrase: 'I am the Iron Man',
+//   },
+// ];
+
+const movies = [
   {
-    name: 'Kevin Bacon',
-    occupation: 'Actor',
-    catchPhrase: 'I love bacon'
-  }, 
-  {
-    name: 'Dollynho',
-    occupation: 'Mascote',
-    catchPhrase: 'Eu sou o Dollynho, seu amiguinho'
+    title: 'The Matrix',
+    genre: 'Fiction',
+    plot: 'Best Movie Ever!',
   },
   {
-    name: 'Bolsonaro',
-    occupation: 'Presidente',
-    catchPhrase: 'Talkei'
-  }
-]
+    title: 'Born a Star',
+    genre: 'Musical',
+    plot: 'Oscar Winner',
+  },
+  {
+    title: 'American Pie',
+    genre: 'Commedy',
+    plot: 'Just a Funny American Movie',
+  },
+];
 
-Celebrity.create(celebrities, (err) => {
-  if (err) { throw(err) }
-  console.log(`Created ${celebrities.length} celebrities`)
-  mongoose.connection.close()
+Movie.create(movies, (err) => {
+  if (err) {
+    throw (err);
+  }
+  console.log(`Created ${movies.length} movies`);
+  mongoose.connection.close();
 });

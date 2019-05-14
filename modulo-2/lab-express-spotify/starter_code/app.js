@@ -2,7 +2,7 @@ const express = require('express');
 const hbs = require('hbs');
 const bodyParser = require('body-parser');
 const SpotifyWebApi = require('spotify-web-api-node');
-// require spotify-web-api-node package here:
+
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -53,4 +53,4 @@ app.get('/artist', (req, res) => {
     })
   });
   
-app.listen(4000, () => console.log("My Spotify project running on port 3000 🎧 🥁 🎸 🔊"));
+app.listen(3000, () => console.log("My Spotify project running on port 3000 🎧 🥁 🎸 🔊"));

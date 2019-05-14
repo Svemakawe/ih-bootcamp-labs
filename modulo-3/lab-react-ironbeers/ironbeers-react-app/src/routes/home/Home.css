@@ -1,0 +1,12 @@
+a > img {
+  width: 100%;
+}
+
+.text-container {
+  margin: 30px;
+}
+
+.text-container > p {
+  color: gray;
+  margin-top: 10px;
+}
